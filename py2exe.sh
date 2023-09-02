@@ -1,0 +1,1 @@
+nuitka --show-progress --nofollow-imports --output-dir=out --windows-disable-console run.py

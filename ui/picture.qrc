@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="image">
+    <file>background.jpg</file>
+    <file>login.jpg</file>
+    <file>报告解析.png</file>
+    <file>编辑.png</file>
+    <file>播放.png</file>
+    <file>查看.png</file>
+    <file>登录背景.jpg</file>
+    <file>放大.png</file>
+    <file>关闭退出.png</file>
+    <file>红色感叹号.png</file>
+    <file>人员管理.png</file>
+    <file>删除（白色）.png</file>
+    <file>删除.png</file>
+    <file>视频解析.png</file>
+    <file>收起箭头.png</file>
+    <file>收缩.png</file>
+    <file>缩小.png</file>
+    <file>头像.png</file>
+    <file>文件.png</file>
+    <file>下拉箭头（大）.png</file>
+    <file>下拉箭头（小）.png</file>
+    <file>移动.png</file>
+    <file>已禁用.png</file>
+    <file>已启动.png</file>
+    <file>暂停.png</file>
+  </qresource>
+</RCC>

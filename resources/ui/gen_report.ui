@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>-gen_report</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,40,60">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_report_title_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:bold 18pt;</string>
+        </property>
+        <property name="text">
+         <string>1号井-xxx井筒</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_report_title_1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:bold 13pt;</string>
+        </property>
+        <property name="text">
+         <string>一、视频基本信息</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="2" column="3">
+          <widget class="QLabel" name="lab_cam_outer_radius">
+           <property name="text">
+            <string>摄像工具外径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="lab_well_name_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="2">
+          <widget class="QLabel" name="lab_vid_gen_time">
+           <property name="text">
+            <string>视频生成时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lab_well_inner_radius">
+           <property name="text">
+            <string>井筒内径</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QLabel" name="lab_well_name">
+           <property name="text">
+            <string>井号名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="2">
+          <widget class="QLabel" name="lab_vid_gen_place">
+           <property name="text">
+            <string>视频生成地点</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="lab_engineer">
+           <property name="text">
+            <string>工程师</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="lab_engineer_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lab_file_name">
+           <property name="text">
+            <string>文件名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="lab_well_inner_radius_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="lab_file_name_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLabel" name="lab_vid_gen_time_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLabel" name="lab_vid_gen_place_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="lab_cam_outer_radius_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx mm</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLabel" name="lab_analyser_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4">
+          <widget class="QLabel" name="lab_analysis_time_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QLabel" name="lab_hole_count_display">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+font:10pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>xxxx</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLabel" name="lab_hole_count">
+           <property name="text">
+            <string>孔洞数量</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="QLabel" name="lab_analysis_time">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>解析时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLabel" name="lab_analyser">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>解析人</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_5" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_report_title_2">
+        <property name="styleSheet">
+         <string notr="true">font:bold 13pt;</string>
+        </property>
+        <property name="text">
+         <string>二、孔洞解析报告</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>782</width>
+           <height>413</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

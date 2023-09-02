@@ -1,0 +1,27 @@
+<RCC>
+  <qresource prefix="image">
+    <file>images/报告解析.png</file>
+    <file>images/编辑.png</file>
+    <file>images/播放.png</file>
+    <file>images/查看.png</file>
+    <file>images/登录背景.jpg</file>
+    <file>images/放大.png</file>
+    <file>images/关闭退出.png</file>
+    <file>images/红色感叹号.png</file>
+    <file>images/人员管理.png</file>
+    <file>images/删除（白色）.png</file>
+    <file>images/删除.png</file>
+    <file>images/视频解析.png</file>
+    <file>images/收起箭头.png</file>
+    <file>images/收缩.png</file>
+    <file>images/缩小.png</file>
+    <file>images/头像.png</file>
+    <file>images/文件.png</file>
+    <file>images/下拉箭头（大）.png</file>
+    <file>images/下拉箭头（小）.png</file>
+    <file>images/移动.png</file>
+    <file>images/已禁用.png</file>
+    <file>images/已启动.png</file>
+    <file>images/暂停.png</file>
+  </qresource>
+</RCC>
