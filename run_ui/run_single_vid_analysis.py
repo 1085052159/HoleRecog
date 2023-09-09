@@ -55,7 +55,6 @@ class Ui_WgtSingleVidAnalysisAction(QMainWindow, Ui_WgtSingleVidAnalysis):
         self.infer_thread.infer_finished.connect(self.infer_finished_action)
         self.btn_resolve_clicked_count = 0
         self.hole_infos = {}
-        self.hole_count = 0
         self.vid_name_received.connect(self.fill_data_by_vid_name)
         self.login_user_info_received.connect(self.init_login_user)
 
@@ -71,6 +70,8 @@ class Ui_WgtSingleVidAnalysisAction(QMainWindow, Ui_WgtSingleVidAnalysis):
         self.btn_gen_report.setEnabled(True)
         self.wgt_vid_display_setting.hide()
         self.wgt_vid_choose_setting.show()
+        self.btn_resolve_clicked_count = 0
+        self.hole_infos.clear()
 
         self.lab_vid_display.hide()
         self.sco_holes_display.hide()
@@ -202,9 +203,10 @@ class Ui_WgtSingleVidAnalysisAction(QMainWindow, Ui_WgtSingleVidAnalysis):
 
     def btn_add_hole_action(self):
         selected_cur_image = self.img_util.QImage2bgr_img(self.cur_image)
-        cur_count = self.hole_count + 1
+        # cur_count = self.hole_count + 1
+        cur_count = self.gid_holes_display.count() + 1
         hole_infos = self.img_util.gen_hole_infos(selected_cur_image, cur_count=cur_count)
-        self.hole_count += len(hole_infos)
+        # self.hole_count += len(hole_infos)
         if len(hole_infos) == 0:
             return
         self.hole_infos.update(hole_infos)
@@ -261,10 +263,16 @@ class Ui_WgtSingleVidAnalysisAction(QMainWindow, Ui_WgtSingleVidAnalysis):
             QMessageBox(QMessageBox.Critical, "警告", "未识别到孔洞").exec_()
             self.btn_resolve.setText("开始解析")
         else:
+            count = 0
             for key, value in hole_infos.items():
-                self.hole_count += 1
-                value["hole_id"] = "孔洞%d" % self.hole_count
-                self.hole_infos["hole%04d" % self.hole_count] = value
+                while True:
+                    hole_id = "hole%04d" % (count + 1)
+                    if hole_id in self.hole_infos.keys():
+                        count += 1
+                    else:
+                        value["hole_id"] = "孔洞%d" % (count + 1)
+                        self.hole_infos[hole_id] = value
+                        break
             self.print_hole_infos(self.hole_infos)
             self.update_gid_holes_display(self.hole_infos)
         self.btn_resolve.setEnabled(True)
@@ -272,6 +280,9 @@ class Ui_WgtSingleVidAnalysisAction(QMainWindow, Ui_WgtSingleVidAnalysis):
     def btn_resolve_action(self):
         vid_info = self.get_vid_info()
         if vid_info is not None:
+            for key, value in self.hole_infos.copy().items():
+                if value["from"] == 0:
+                    del self.hole_infos[key]
             if self.btn_resolve_clicked_count > 0:
                 self.clear_gid_holes_display()
             self.btn_resolve.setText("重新解析")
@@ -367,7 +378,6 @@ class Ui_WgtSingleVidAnalysisAction(QMainWindow, Ui_WgtSingleVidAnalysis):
         self.edt_engineer.setPlainText(engineer)
 
         self.hole_infos = single_vid_data["hole_infos"]
-        self.hole_count = len(self.hole_infos)
         self.print_hole_infos(self.hole_infos)
         self.update_gid_holes_display(self.hole_infos)
 
